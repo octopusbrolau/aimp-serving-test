@@ -78,8 +78,7 @@ headers = {
     'onepanel-access-token': access_token
 }
 
-print('headers', headers)
-print('endpoint', endpoint)
+
 r = requests.post(endpoint, headers=headers, json=data)
 
 result = r.json()
