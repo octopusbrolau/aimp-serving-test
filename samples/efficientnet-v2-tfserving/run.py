@@ -41,7 +41,7 @@ configuration.api_key_prefix['authorization'] = 'Bearer'
 
 
 namespace = 'mp'
-model_name = 'test'
+model_name = 'efficientnet-v2-tfserving'
 
 
 # In[6]:
