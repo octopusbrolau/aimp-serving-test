@@ -33,7 +33,7 @@ model_name = 'yelp-polarity-triton'
 
 # Configure API key authorization: Bearer
 configuration = onepanel.core.api.Configuration(
-    host=host,
+    host=os.getenv('ONEPANEL_API_URL'),,
     api_key={
         'authorization': access_token
     }
