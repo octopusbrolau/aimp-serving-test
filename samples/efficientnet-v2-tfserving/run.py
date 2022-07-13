@@ -41,7 +41,7 @@ configuration.api_key_prefix['authorization'] = 'Bearer'
 
 
 namespace = 'mp'
-model_name = 'test'
+model_name = 'efficientnet-v2-tfserving'
 
 
 # In[6]:
@@ -78,8 +78,7 @@ headers = {
     'onepanel-access-token': access_token
 }
 
-print('headers', headers)
-print('endpoint', endpoint)
+
 r = requests.post(endpoint, headers=headers, json=data)
 
 result = r.json()
